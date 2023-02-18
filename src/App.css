@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iss-logo {
+  height: 180px;
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 20%;
+  max-width: 450px;
+  height: 45vh;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.tags {
+  cursor: pointer;
+  padding: 12px;
+  text-decoration: none;
+}
+
+span {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 20px;
+}
+
+span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+span:hover::before {
+  width: 100%;
+}
+
+.border {
+  border-top: gray groove;
+  border-width: thin;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+}
+
+.astro-names {
+  margin: 10px;
+}
+
+.h5-tags {
+  font-style: italic;
+}
+
+.h5-tags::before {
+  content: "*";
+  margin-right: 5px;
+  color: white;
+}
+
+.h5-tags::after {
+  content: "*";
+  margin-left: 5px;
+  color: white;
+}
+
+.iss-svg {
+  width: 25px;
+  height: 25px;
+  margin: -5.5px;
+  margin-right: -10px;
+}
+
+.iss-marker {
+  width: 65px;
+  height: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
