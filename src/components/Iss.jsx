@@ -7,7 +7,6 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function Iss() {
 
-  const [location, setLocation] = useState(null)
   const [markerPosition, setMarkerPosition] = useState(null)
 
   function getIssLocation() {
@@ -19,7 +18,6 @@ export default function Iss() {
             lat: parseFloat(data.iss_position.latitude),
             lng: parseFloat(data.iss_position.longitude),
           };
-          setLocation(newLocation);
           setMarkerPosition(newLocation);
         })
         .catch((err) => console.error(err));
