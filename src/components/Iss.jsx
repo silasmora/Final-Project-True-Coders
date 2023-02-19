@@ -30,7 +30,7 @@ export default function Iss() {
   }, [])    
   
   return (
-    <div className='border' style={{ height: '400px', width: '400px', maxWidth: '100%' }}>
+    <div className='border' style={{ height: '400px', width: '400px', maxWidth: '100%', }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: apiKey}}
         defaultCenter={{ lat: 0, lng: 0 }}
